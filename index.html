@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ReaderWeather</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Itim">
+
+    <link href="./styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="bg" class="bg">
+        <div id="location-container">
+            <input type="text" id="location-input" placeholder="Search Location">
+            <ul id="search-list" class="inactive">
+
+            </ul>           
+            <h2 id="location" class="center"></h2>
+            <h4 id="date" class="center"></h4> 
+            <h1 id="temperature" class="center"></h1>
+            <p id="condition" class="center"></p>
+            <div id="image" class="center">
+                
+            </div>
+        </div>
+
+
+        <div id="time-container" class="container opacity">
+            <div id="time-box" class="">
+                <table class="table-time">
+                    <thead>
+                        <tr id="time-heading">
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="time-temp">
+
+                        </tr>
+                        <tr id="time-condition">
+
+                        </tr>
+                        <tr id="time-chance-rain">
+
+                        </tr>
+                        <tr id="time-wind-speed">
+
+                        </tr>
+                        <tr id="time-wind-direction">
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="day-container" class="container opacity">
+            <div id="day-box">
+                <table class="table-day">
+                    <thead>
+                        <tr id="day-heading">
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="day-temp">
+
+                        </tr>
+                        <tr id="day-condition">
+
+                        </tr>
+                        <tr id="day-chance-rain">
+
+                        </tr>
+                        <tr id="day-sunrise">
+
+                        </tr>
+                        <tr id="day-sunset">
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+ 
+
+    
+    

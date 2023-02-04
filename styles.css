@@ -20,17 +20,37 @@ body, html {
     background-size: cover;
 } 
 
-input {
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
     outline: none;
-    margin: 50px auto;
-    display: block;
-    border-radius: 15px;
+    margin: 50px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px 0 0 15px;
     padding: 10px 10px;
     width: 75%;
     max-width: 600px;
     color: #3A3B3C;
     font-size: 15px;
     z-index: 3
+}
+input[type="submit"] {
+    outline: none;
+    margin: 50px 0 20px 0;
+    display: flex;
+    border-radius: 0 15px 15px 0;
+    padding: 10px 10px;
+    width: 5%;
+    max-width: 75px;
+    color: white;
+    background-color: #3A3B3C;
+    font-size: 15px;
+    z-index: 3;
+    font-weight: bold;
 }
 
 ul.inactive {

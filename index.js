@@ -1,5 +1,6 @@
 const API_KEY = '4018b877ee834ba29ab200154233101';
 const locationInput = document.getElementById("location-input");
+const submitBtn = document.getElementById("submit")
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 const shortDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -288,7 +289,6 @@ function search() {
             searchList.classList.remove("inactive")
             searchList.classList.add("active")
             for (let i = 0; i < data.length; i++) {
-                console.log(data[i].region, data[i].country);
                 searchList.innerHTML += `
                     <li id="${data[i].region}" class="search-result"><span class="search-left">${data[i].region}</span><span class="search-right">${data[i].country}</span></li>
                 `
@@ -309,10 +309,12 @@ function amendValue() {
 }
 
 
-
 // Event Listener on change of input to retrieve all data and amend page
 locationInput.addEventListener("keyup", search);
-
+submitBtn.addEventListener("click", function submitValue(e) {
+    e.preventDefault()
+    getAllData(locationInput.value)
+})
 
 
 

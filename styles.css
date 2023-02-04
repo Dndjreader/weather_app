@@ -62,7 +62,7 @@ ul.inactive {
 
 ul.active {
     width: 60%;
-    margin: -50px auto;
+    margin: -20px auto;
     max-width: 550px;
     z-index: 2;
     position: absolute;

@@ -136,6 +136,7 @@ function getCurrentData(result) {
         timeContainer.classList.add("opacity")
 
         // Output updated values as error
+        locationOutput.innerText = "";
         tempOutput.innerText = "";
         conditionOutput.innerText = "";
         imageOutput.innerHTML = "";
@@ -290,9 +291,8 @@ function search() {
             searchList.classList.add("active")
             for (let i = 0; i < data.length; i++) {
                 searchList.innerHTML += `
-                    <li id="${data[i].region}" class="search-result"><span class="search-left">${data[i].region}</span><span class="search-right">${data[i].country}</span></li>
+                    <li id="${data[i].name}" class="search-result"><span class="search-left">${data[i].name}</span><span class="search-right">${data[i].region}, ${data[i].country}</span></li>
                 `
-                
             }
             
             let searchResult = document.querySelectorAll(".search-result");

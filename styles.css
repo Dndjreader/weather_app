@@ -32,7 +32,7 @@ input[type="text"] {
     justify-content: space-around;
     border-radius: 15px 0 0 15px;
     padding: 10px 10px;
-    width: 75%;
+    width: 60%;
     max-width: 600px;
     color: #3A3B3C;
     font-size: 15px;
@@ -44,8 +44,7 @@ input[type="submit"] {
     display: flex;
     border-radius: 0 15px 15px 0;
     padding: 10px 10px;
-    width: 5%;
-    max-width: 75px;
+    width: 75px;
     color: white;
     background-color: #3A3B3C;
     font-size: 15px;
@@ -61,7 +60,7 @@ ul.inactive {
 }
 
 ul.active {
-    width: 60%;
+    width: 75%;
     margin: -20px auto;
     max-width: 550px;
     z-index: 2;
@@ -177,4 +176,21 @@ background-clip: content-box;
     table {
         margin: 10px 0 10px 25px;
     }
+    ul.active {
+        width: 90%;
+    }
+    .search-left, .search-right {
+        font-size: 15px;
+        margin-top: 5px;
+        display: block;
+        float:none;
+        margin-left: 10px;
+        height:auto;
+        overflow:visible;
+    }
+    .form {
+        width: 90%;
+    }
+
+
 }
